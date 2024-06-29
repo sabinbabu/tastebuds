@@ -83,3 +83,41 @@ section h2 {
 .card_description {
   margin: 1rem;
 }
+
+/* recommended_section */
+
+.recommended_section {
+  background-color: white;
+}
+
+.recommended_recipies_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reco_recipie_card {
+  height: auto;
+  width: 18rem;
+  border-radius: 1.2rem;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.534);
+}
+
+.reco_recipie_image_wrapper {
+  height: 10rem;
+  width: 100%;
+}
+
+.reco_recipie_image_wrapper img {
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.reco_recipie_description > * {
+  padding: 1rem;
+}
+
+.reco_recipie_description button {
+  width: 80%;
+  margin-left: 1rem;
+}
