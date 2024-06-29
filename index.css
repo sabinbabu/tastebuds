@@ -27,9 +27,22 @@ section h2 {
   padding: 0.5rem;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo_wrapper {
   height: 5rem;
   width: 5rem;
+}
+
+#logo_name {
+  font-weight: bold;
+  color: white;
+  font-size: xx-large;
+  padding: 0.5rem;
 }
 
 .navigation_options span {
