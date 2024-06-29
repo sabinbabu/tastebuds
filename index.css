@@ -31,6 +31,7 @@ section h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo_wrapper {
@@ -48,6 +49,7 @@ section h2 {
 .navigation_options span {
   color: white;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 /* hero_section */
@@ -72,6 +74,8 @@ section h2 {
 
 .hero_text_container p {
   color: white;
+  font-size: x-large;
+  letter-spacing: 4px;
 }
 
 /* receipies_section */
