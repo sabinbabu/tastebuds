@@ -5,11 +5,24 @@
   --primary-color: rgb(247, 190, 83);
 }
 
+body {
+  background-color: var(--primary-color);
+}
+
+#image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+section h2 {
+  padding: 1rem;
+}
+
 /* header */
 .navigation {
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-color);
   align-items: center;
   padding: 0.5rem;
 }
@@ -19,12 +32,54 @@
   width: 5rem;
 }
 
-#logo {
-  height: 5rem;
-  width: 5rem;
-}
-
 .navigation_options span {
   color: white;
   padding: 0.5rem;
+}
+
+/* hero_section */
+
+.hero_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_wrapper {
+  width: auto;
+  height: 25rem;
+  flex: 1;
+}
+
+.hero_text_container {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.534);
+  padding: 3rem 5rem;
+}
+
+.hero_text_container p {
+  color: white;
+}
+
+/* receipies_section */
+
+.recipies_section {
+  padding: 1rem;
+}
+
+.recepie_card {
+  display: flex;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.card_image_wrapper {
+  height: 8.5rem;
+  width: 15rem;
+  margin: 1rem;
+}
+
+.card_description {
+  margin: 1rem;
 }
