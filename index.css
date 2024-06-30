@@ -1,8 +1,11 @@
+:root {
+  --primary-color: rgb(247, 190, 83);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  --primary-color: rgb(247, 190, 83);
 }
 
 body {
@@ -17,6 +20,10 @@ body {
 
 section h2 {
   padding: 1rem;
+}
+
+a {
+  text-decoration-line: none;
 }
 
 /* header */
@@ -139,6 +146,7 @@ section h2 {
 
 .reco_recipie_card {
   height: auto;
+  flex-grow: 1;
   width: 18rem;
   border-radius: 1.2rem;
   margin: 1rem;
@@ -159,8 +167,22 @@ section h2 {
   padding: 1rem;
 }
 
+.reco_recipie_description h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reco_recipie_description p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .reco_recipie_description button {
   width: 80%;
+  margin-top: 1rem;
   margin-left: 1rem;
 }
 
