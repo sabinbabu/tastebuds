@@ -164,6 +164,7 @@ a {
   .aside_container > * {
     flex-grow: 1;
   }
+
   .card_image_wrapper {
     min-width: 10rem;
   }
@@ -178,6 +179,10 @@ a {
 @media only screen and (max-width: 600px) {
   .card_image_wrapper {
     min-width: 7rem;
+  }
+
+  .aside_container {
+    display: inline-block;
   }
 }
 
@@ -232,6 +237,7 @@ a {
   width: 80%;
   margin-top: 1rem;
   margin-left: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.534);
 }
 
 @media only screen and (max-width: 600px) {
@@ -262,7 +268,6 @@ a {
   .subscribe_section form {
     display: flex;
     flex-direction: column;
-    color: aqua;
   }
 
   .subscribe_container form > * {
