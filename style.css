@@ -21,7 +21,7 @@
 body {
   background-color: var(--background-color);
   display: grid;
-  grid-template-rows: 7rem 40rem 0.5fr 1.2fr 10rem 7rem;
+  grid-template-rows: 7rem 40rem 0.5fr 0.7fr 15rem 7rem;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: 
   "header header"
@@ -30,6 +30,18 @@ body {
   "recommendation recommendation"
   "subscribe subscribe"
   "footer footer";
+
+  @media screen and (max-width:680px) {
+    grid-template-rows: 8rem 165rem 50rem 5fr 25rem 1rem;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+  "header"
+  "blogs"
+  "filter"
+  "recommendation"
+  "subscribe"
+  "footer";
+  }
   
   @media screen and (max-width:430px) {
     grid-template-rows: 8rem 165rem 50rem 5fr 25rem 1rem;
@@ -58,7 +70,7 @@ body {
   background: url(./assets/green-pasta-with-tomato.jpg) no-repeat center;
   background-size: cover;
 
-  @media screen and (max-width:430px) {
+  @media screen and (max-width:680px) {
     display: none;
   }
 }
@@ -117,16 +129,17 @@ body {
  a{
   text-decoration: none;
   color: black;
+  
  }
 
 /* header section */
 
-@media screen and (max-width:430px) {
-  .header{
-    background-color: aqua;
+@media screen and (max-width:960px) {
+  .header-container>.social-media{
+    display: none;
   }
 
-  .nav-menu ul{
+   .nav-menu ul{
     display: block !important;
     width: 100%;
   }
@@ -159,6 +172,17 @@ body {
   align-items: center;
 }
 
+.nav-menu ul a:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.nav-menu .nav-menu-logo:hover{
+  background-color: var(--background-color);
+  color: black;
+}
+
 .mobile-nav{
   display: flex;
 }
@@ -172,8 +196,6 @@ body {
   font-size: x-large !important;
   margin: 0 1.5rem;
 }
-
-
 
 
 /* hero-section */
@@ -203,13 +225,6 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width:430px) {
-  .blog-description{
-    max-height: 20rem;
-    overflow: hidden;
-  }
-}
-
 .blog-card img{
   height: 15rem;
   width: 15rem;
@@ -219,6 +234,17 @@ body {
 .blog-description{
 padding: 2rem;
 flex-basis: 70%;
+}
+
+@media screen and (max-width:680px) {
+  .blog-description{
+    max-height: 20rem;
+    overflow: hidden;
+  }
+
+  .blog-card{
+    display: block;
+  }
 }
 
 
@@ -233,7 +259,10 @@ flex-basis: 70%;
   box-shadow: var(--box-shadow-elevated);
   border-radius: 2rem;
   margin: 2rem;
+}
 
+.filter > * >ul > a:hover{
+font-size: large;
 }
 
 /* recommendation-section */
@@ -293,6 +322,9 @@ width: 19rem;
   height: 20rem;
   width: 20rem;
   object-fit: cover;
+  @media screen and (max-width:430px) {
+    width: 15rem;
+  }
 }
 
 /* subscribe-section */
