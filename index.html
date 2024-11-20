@@ -29,7 +29,6 @@
   <!-- header section -->
   <section class="header">
     <div class="header-container">
-
       <div class="social-media">
         <ul>
           <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -39,13 +38,15 @@
       </div>
       <div class="nav-menu">
         <ul>
-          <a href="#body"><li>HOME</li></a>
-          <a href="#footer"><li>ABOUT</li></a>
-          <a href="#blogs"><li>BLOGS</li></a>
-          <a href="#body"><li class="nav-menu-logo">TASTEBUDS</li></a>
-          <a href="#blogs"><li>BLOGS</li></a>
-          <a href="#recommendation"><li>RECOMMENDATION</li></a>
-          <a href="#footer"><li>CONTACT</li></a>  
+          <a href="#body"><li id="nav-home">HOME</li></a>
+          <a href="#footer"><li id="nav-about">ABOUT</li></a>
+          <a href="#blogs"><li id="nav-blogs">BLOGS</li></a>
+          <a href="#body"><li id="nav-logo" class="nav-menu-logo">TASTEBUDS</li></a>
+          <div class="mobile-nav">
+            <a href="#blogs"><li id="nav-blog">BLOGS</li></a>
+            <a href="#recommendation"><li id="nav-recommendation">RECOMMENDATION</li></a>
+            <a href="#footer"><li id="nav-contact">CONTACT</li></a>    
+          </div>
         </ul>
       </div>
 
@@ -63,9 +64,10 @@
 
   <!-- blogs section -->
   <section class="blogs" id="blogs">
+
   <h2>Latest Blogs</h2>
 
-  <div class="blog-body">
+  <div class="blog-container">
 
     <div class="blog-card">
       <img src="./assets/ramen.jpg" alt="Ramen">
