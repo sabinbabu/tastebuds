@@ -15,6 +15,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-padding-top:7rem;
 }
 
 body {
@@ -29,17 +30,14 @@ body {
   "recommendation recommendation"
   "subscribe subscribe"
   "footer footer";
+  
 }
 
 .header{
   grid-area: header;
-  display: flex;
-  align-items: center;
   position: sticky;
   top: 0;
-  background-color: var(--background-color);
-  opacity: 80%;
-  
+ 
 }
 .hero{
   grid-area: hero;
@@ -55,8 +53,6 @@ body {
   box-shadow: var(--box-shadow-elevated);
   border-radius: 2rem;
   margin: 2rem;
-
-
 }
 .filter{
   grid-area: filter;
@@ -110,6 +106,15 @@ body {
  }
 
 /* header section */
+
+.header-container{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: var(--background-color);
+  opacity: 80%;  
+
+}
 .social-media{
   flex-basis: 20%;
   padding: 1rem;
