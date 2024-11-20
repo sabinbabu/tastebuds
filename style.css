@@ -103,6 +103,12 @@ body {
  h2{
   padding: 2rem 0 0 2rem;
  }
+
+ a{
+  text-decoration: none;
+  color: black;
+ }
+
 /* header section */
 .social-media{
   flex-basis: 20%;
@@ -238,7 +244,9 @@ height: 40rem;
   align-items: center;
   padding: 2rem;
 }
-
+.footer-container >.nav-menu>ul>a,.footer-container >.social-media>ul>a{
+  color: white;
+}
 .footer-container >.social-media{
   text-align: right;
   font-size: large;
