@@ -155,7 +155,6 @@ body {
 
 /* blogs-section */
 
-
 .blog-card{
   margin: 2rem;
   display: flex;
@@ -165,8 +164,8 @@ body {
 
 .blog-card img{
   height: 15rem;
-  flex-basis: 30%;
-  
+  width: 15rem;
+  object-fit: cover;
 }
 
 .blog-description{
