@@ -201,6 +201,8 @@ gap: 5rem;
 justify-content: space-evenly;
 }
 
+
+
 .recommendation-card{
 width: 19rem;
 }
@@ -220,19 +222,19 @@ width: 19rem;
   
 }
 
-#read-more {
+.read-more {
   display: none;
  }
 
-#read-more:checked + .recommendation-card >.recommendation-description {
+.read-more:checked + .recommendation-card >.recommendation-description {
   max-height: 50rem ;
  }
 
- #read-more:checked + .recommendation-card >#read-more-btn::after {
+ .read-more:checked + .recommendation-card >#read-more-btn::after {
   content: "Read Less";
  }
 
- #read-more:not(:checked) + .recommendation-card >#read-more-btn::after {
+ .read-more:not(:checked) + .recommendation-card >#read-more-btn::after {
   content: " Read More"; 
 }
 
